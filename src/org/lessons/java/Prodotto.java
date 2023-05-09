@@ -10,6 +10,7 @@ public class Prodotto {
 	private float price;
 	private int iva;
 	
+//	CONSTRUCTOR 
 	public Prodotto ( String name, String brand, float price, int iva) {
 		
 		Random rnd = new Random();
@@ -67,9 +68,7 @@ public class Prodotto {
 				getName() + "\n" +
 				getBrand() + "\n" +
 				getPrice() + "\n" +
-				getIva() ;
-				
-				
+				getIva() ;		
 	}
 	
 }
