@@ -38,11 +38,7 @@ public class Cuffia extends Prodotto{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return  getCode() + "\n" +
-				getName() + "\n" +
-				getBrand() + "\n" +
-				getPrice() + "\n" +
-				getIva() + "\n" +
+		return "(P)" + getProductStr() + 
 				getColor() + "\n" +
 				isWireless();
 	}

@@ -61,14 +61,25 @@ public class Prodotto {
 		this.iva = iva;
 	}
 	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
+//	ALTRI METODI
+	public int getIvaPrice() {
+		
+		return (int) (getPrice() * (1 + getIva() / 100f));
+	}
+	
+	protected String getProductStr() {
 		return  getCode() + "\n" +
 				getName() + "\n" +
 				getBrand() + "\n" +
 				getPrice() + "\n" +
-				getIva() ;		
+				getIvaPrice() + "\n" +
+				getIva() ;	
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "(P)" + getProductStr();	
 	}
 	
 }

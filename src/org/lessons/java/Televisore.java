@@ -36,11 +36,7 @@ public class Televisore extends Prodotto{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return  getCode() + "\n" +
-				getName() + "\n" +
-				getBrand() + "\n" +
-				getPrice() + "\n" +
-				getIva() + "\n" +
+		return "(T)" + getProductStr() +
 				getSize() + "\n" +
 				isSmart();
 	}
